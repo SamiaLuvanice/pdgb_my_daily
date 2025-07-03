@@ -1,3 +1,38 @@
+.container-fluid {
+    padding: 0;
+}
+
+.container-fluid p {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.hero-banner {
+  position: relative;
+  height: 25vh;
+  overflow: hidden;
+}
+
+.hero-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* ou #5158BB para combinar com a paleta */
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5); /* destaque sobre imagem */
+    pointer-events: none;
+     /*background: rgba(0, 0, 0, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 12px; */
+}
+
+
 body {
      background: linear-gradient(to top, #D6D2D2, #F4D7EC, #F26DF9);
      font-family: 'Segoe UI', sans-serif;
@@ -48,4 +83,11 @@ body {
  .title-outside {
      margin-bottom: 1rem;
  }
+
+ @media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
 
